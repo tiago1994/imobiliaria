@@ -1,0 +1,7 @@
+RewriteEngine on
+
+# index
+RewriteRule ^index$									index.php [NC]
+RewriteRule ^imoveis$ 								imoveis.php [NC]
+RewriteRule ^imovel/([^/]+)/([^/]+)$ 				imovel.php?id=$1&nome=$2 [NC]
+RewriteRule ^contato$ 								contato.php [NC]
